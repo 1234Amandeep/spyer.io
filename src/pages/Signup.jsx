@@ -48,7 +48,7 @@ export default function Signup() {
       setUser({ _id: data._id, email: data.email });
 
       // navigating to home
-      navigate("/");
+      // navigate("/");
     } else {
       // setting errors
       setIsError(true);
