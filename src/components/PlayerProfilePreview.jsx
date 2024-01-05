@@ -76,16 +76,16 @@ export default function PlayerProfilePreview() {
                     {playerProfile.currentClub},&nbsp;{playerProfile.status}
                   </div>
                   <span className="card-time">{playerProfile.shirtNumber}</span>
-                  <a
-                    type="button"
-                    className="nav-link"
-                    onClick={addToWishlist}
-                    data-bs-toggle="offcanvas"
-                    href="#offcanvasExample"
-                    role="button"
-                    aria-controls="offcanvasExample"
-                  >
-                    <i className="fa-regular fa-heart"></i>
+                  <a className="nav-link">
+                    <i
+                      type="button"
+                      onClick={addToWishlist}
+                      data-bs-toggle="offcanvas"
+                      href="#offcanvasExample"
+                      role="button"
+                      aria-controls="offcanvasExample"
+                      className="fa-regular fa-heart"
+                    ></i>
                   </a>
                   {/* <a
                     type="button"
