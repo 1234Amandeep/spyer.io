@@ -76,10 +76,9 @@ export default function PlayerProfilePreview() {
                     {playerProfile.currentClub},&nbsp;{playerProfile.status}
                   </div>
                   <span className="card-time">{playerProfile.shirtNumber}</span>
-                  <a className="nav-link">
+                  <a className="nav-link" onClick={addToWishlist}>
                     <i
                       type="button"
-                      onClick={addToWishlist}
                       data-bs-toggle="offcanvas"
                       href="#offcanvasExample"
                       role="button"
