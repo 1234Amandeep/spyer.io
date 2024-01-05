@@ -23,7 +23,9 @@ export default function PlayerProfilePreview() {
 
   const addToWishlist = async () => {
     const isExists = contains(favList, playerProfile);
+    console.log("outside addtowishlist if");
     if (!isExists) {
+      console.log("inside addtowishlist if");
       const temp = [...favList, playerProfile];
       localStorage.setItem("favList", JSON.stringify(temp));
 
