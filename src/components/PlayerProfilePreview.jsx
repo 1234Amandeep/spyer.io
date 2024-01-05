@@ -57,7 +57,14 @@ export default function PlayerProfilePreview() {
     <>
       <section className="player-profile-preview-outer d-flex justify-content-center mt-md-5 mt-0">
         <div className="player-profile-preview ">
-          <article className="card horizontal" onClick={addToWishlist}>
+          <article
+            className="card horizontal"
+            onClick={addToWishlist}
+            data-bs-toggle="offcanvas"
+            href="#offcanvasExample"
+            role="button"
+            aria-controls="offcanvasExample"
+          >
             <div className="card-inner">
               <span className="card-pin simple"></span>
               <div className="card-image">
@@ -77,14 +84,7 @@ export default function PlayerProfilePreview() {
                   </div>
                   <span className="card-time">{playerProfile.shirtNumber}</span>
                   <a className="nav-link">
-                    <i
-                      type="button"
-                      data-bs-toggle="offcanvas"
-                      href="#offcanvasExample"
-                      role="button"
-                      aria-controls="offcanvasExample"
-                      className="fa-regular fa-heart"
-                    ></i>
+                    <i type="button" className="fa-regular fa-heart"></i>
                   </a>
                   {/* <a
                     type="button"
